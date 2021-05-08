@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 
 if [ -z "${retail}" ]; then
-  retail=$(grep -oP 'retail:\K\d+' toc-versions.txt)
+  retail=90005
 fi
 if [ -z "${bc}" ]; then
-  bc=$(grep -oP 'bc:\K\d+' toc-versions.txt)
+  bc=20501
 fi
 if [ -z "${classic}" ]; then
-  classic=$(grep -oP 'classic:\K\d+' toc-versions.txt)
+  classic=11307
 fi
 
 
