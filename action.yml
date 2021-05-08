@@ -1,0 +1,14 @@
+name: WoW ToC version replacer
+description: Replaces toc version placeholders with an up-to-date toc version
+branding:
+    icon: package
+    color: yellow
+inputs:
+    args:
+        description: 'Command-line arguments. See https://github.com/Numynum/ToCVersions'
+        required: false
+runs:
+    using: composite
+    steps:
+        - run: $GITHUB_ACTION_PATH/replaceToc.sh ${{ inputs.args }}
+          shell: bash
