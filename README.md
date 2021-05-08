@@ -40,3 +40,14 @@ Full example:
           classic: 1234
         with:
           args: file1.toc path/to/file2.toc
+
+An example .toc file could be:
+
+    ## Interface: @toc-version-retail@
+    ## Interface-Retail: @toc-version-retail@
+    ## Interface-Classic: @toc-version-classic@
+    ## Interface-BC: @toc-version-bc@
+    ## Title: MyEpicAddon
+    ## Notes: Making addons great again!
+    ## Author: EpicAddonWriter2000
+    ## Version: @project-version@
