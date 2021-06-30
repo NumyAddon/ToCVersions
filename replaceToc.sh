@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 if [ -z "${retail}" ]; then
-  retail=90005
+  retail=90100
 fi
 if [ -z "${bcc}" ]; then
   bcc=20501
