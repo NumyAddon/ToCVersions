@@ -4,7 +4,7 @@ if [ -z "${retail}" ]; then
   retail=90200
 fi
 if [ -z "${bcc}" ]; then
-  bcc=20503
+  bcc=20504
 fi
 if [ -z "${classic}" ]; then
   classic=11402
