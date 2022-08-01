@@ -1,10 +1,11 @@
 # replaceToc.sh
 
-__replaceToc.sh__ will replace ToC placeholders for retail, classic and tbc.
+__replaceToc.sh__ will replace ToC placeholders for retail, classic, tbc, and wrath.
 
 Placeholders that will be replaced are:
     
     @toc-version-retail@
+    @toc-version-wrath@
     @toc-version-bcc@
     @toc-version-classic@
 
@@ -21,8 +22,8 @@ Example usage:
       - name: Create Retail Package
         uses: BigWigsMods/packager@master
 
-By default, it will replace placeholders in all .toc files in your root directory.
-If this isn't enough, you can instead pass a list of files to replace:
+By default, it will replace placeholders in all .toc files in your repository.
+If this isn't what you want, you can instead pass a list of files to replace:
 
       - name: Replace toc-versions
         uses: Numynum/ToCVersions@master
@@ -36,6 +37,7 @@ Full example:
         uses: Numynum/ToCVersions@master
         env:
           retail: 1234
+          wrath: 1234
           bcc: 1234
           classic: 1234
         with:
@@ -47,7 +49,8 @@ An example .toc file could be:
     ## Interface-Retail: @toc-version-retail@
     ## Interface-Classic: @toc-version-classic@
     ## Interface-BCC: @toc-version-bcc@
+    ## Interface-Wrath: @toc-version-wrath@
     ## Title: MyEpicAddon
-    ## Notes: Making addons great again!
+    ## Notes: Making epic addons!
     ## Author: EpicAddonWriter2000
     ## Version: @project-version@
