@@ -17,7 +17,7 @@ Example usage:
       - uses: actions/checkout@v2
 
       - name: Replace toc-versions
-        uses: Numynum/ToCVersions@master
+        uses: NumyAddon/ToCVersions@v1
 
       - name: Create Retail Package
         uses: BigWigsMods/packager@master
@@ -26,7 +26,7 @@ By default, it will replace placeholders in all .toc files in your repository.
 If this isn't what you want, you can instead pass a list of files to replace:
 
       - name: Replace toc-versions
-        uses: Numynum/ToCVersions@master
+        uses: NumyAddon/ToCVersions@v1
         with:
           args: file1.toc path/to/file2.toc
 
@@ -34,7 +34,7 @@ If needed for some reason, you can override the versions, by passing them as env
 Full example:
 
       - name: Replace toc-versions
-        uses: Numynum/ToCVersions@master
+        uses: NumyAddon/ToCVersions@v1
         env:
           retail: 1234
           wrath: 1234
