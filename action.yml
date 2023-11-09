@@ -5,7 +5,7 @@ branding:
     color: yellow
 inputs:
     args:
-        description: 'Command-line arguments. See https://github.com/Numynum/ToCVersions'
+        description: 'Command-line arguments. See https://github.com/NumyAddon/ToCVersions'
         required: false
 runs:
     using: composite
