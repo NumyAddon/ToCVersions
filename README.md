@@ -14,13 +14,15 @@ The best way to use this, is as part of your addon builds, between checkout and 
 Example usage:
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Replace toc-versions
         uses: NumyAddon/ToCVersions@v1
 
       - name: Create Retail Package
-        uses: BigWigsMods/packager@master
+        uses: BigWigsMods/packager@v2
 
 By default, it will replace placeholders in all .toc files in your repository.
 If this isn't what you want, you can instead pass a list of files to replace:
