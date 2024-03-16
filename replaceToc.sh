@@ -26,6 +26,7 @@ fi
 for var in "$@"
 do
   sed -i "s/@toc-version-retail@/$retail/g" "$var"
+  sed -i "s/@toc-version-cata@/$cata/g" "$var"
   sed -i "s/@toc-version-wrath@/$wrath/g" "$var"
   sed -i "s/@toc-version-bc@/$bcc/g" "$var"
   sed -i "s/@toc-version-bcc@/$bcc/g" "$var"
