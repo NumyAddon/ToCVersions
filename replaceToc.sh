@@ -13,7 +13,7 @@ if [ -z "${bcc}" ]; then
   bcc=20504
 fi
 if [ -z "${classic}" ]; then
-  classic=11504
+  classic="11504,11505"
 fi
 
 
