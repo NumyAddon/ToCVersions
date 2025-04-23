@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 if [ -z "${retail}" ]; then
-  retail="110100,110105"
+  retail=110105
 fi
 if [ -z "${cata}" ]; then
   cata=40402
