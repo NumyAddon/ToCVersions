@@ -1,10 +1,11 @@
 # replaceToc.sh
 
-__replaceToc.sh__ will replace ToC placeholders for retail, classic, tbc, wrath, and cata.
+__replaceToc.sh__ will replace ToC placeholders for retail, classic, tbc, wrath, cata, and mists.
 
 Placeholders that will be replaced are:
     
     @toc-version-retail@
+    @toc-version-mists@
     @toc-version-cata@
     @toc-version-wrath@
     @toc-version-bcc@
@@ -40,6 +41,7 @@ Full example:
         uses: NumyAddon/ToCVersions@v1
         env:
           retail: 1234
+          mists: 1234
           cata: 1234
           wrath: 1234
           bcc: 1234
@@ -51,6 +53,7 @@ An example .toc file could be:
 
     ## Interface: @toc-version-retail@
     ## Interface-Retail: @toc-version-retail@
+    ## Interface-Mists: @toc-version-mists@
     ## Interface-Cata: @toc-version-cata@
     ## Interface-Wrath: @toc-version-wrath@
     ## Interface-BCC: @toc-version-bcc@
@@ -59,3 +62,12 @@ An example .toc file could be:
     ## Notes: Making epic addons!
     ## Author: EpicAddonWriter2000
     ## Version: @project-version@
+
+Or with a comma separated Interface version:
+
+    ## Interface: @toc-version-retail@, @toc-version-mists@, @toc-version-cata@, @toc-version-wrath@, @toc-version-bcc@, @toc-version-classic@
+    ## Title: MyEpicAddon
+    ## Notes: Making epic addons!
+    ## Author: EpicAddonWriter2000
+    ## Version: @project-version@
+
