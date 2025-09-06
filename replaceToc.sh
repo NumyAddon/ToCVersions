@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 if [ -z "${retail}" ]; then
-  retail=110200
+  retail="110200,110205"
 fi
 if [ -z "${mists}" ]; then
   mists=50500
