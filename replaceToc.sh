@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+if [ -z "${midnight}" ]; then
+  midnight=120000
+fi
 if [ -z "${retail}" ]; then
   retail="110200,110205"
 fi
@@ -22,12 +25,13 @@ fi
 
 if [ $# -eq 0 ]; then
   find . \( ! -regex '.*/\..*' \) -type f -name "*.toc" -exec sed -i \
-    "s/@toc-version-retail@/$retail/g; s/@toc-version-mists@/$mists/g; s/@toc-version-cata@/$cata/g; s/@toc-version-wrath@/$wrath/g; s/@toc-version-bc@/$bcc/g; s/@toc-version-bcc@/$bcc/g; s/@toc-version-vanilla@/$classic/g; s/@toc-version-classic@/$classic/g" \
+    "s/@toc-version-midnight@/$midnight/g; s/@toc-version-retail@/$retail/g; s/@toc-version-mists@/$mists/g; s/@toc-version-cata@/$cata/g; s/@toc-version-wrath@/$wrath/g; s/@toc-version-bc@/$bcc/g; s/@toc-version-bcc@/$bcc/g; s/@toc-version-vanilla@/$classic/g; s/@toc-version-classic@/$classic/g" \
     {} +
 fi
 
 for var in "$@"
 do
+  sed -i "s/@toc-version-midnight@/$midnight/g" "$var"
   sed -i "s/@toc-version-retail@/$retail/g" "$var"
   sed -i "s/@toc-version-mists@/$mists/g" "$var"
   sed -i "s/@toc-version-cata@/$cata/g" "$var"
