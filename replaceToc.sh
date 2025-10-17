@@ -7,7 +7,7 @@ if [ -z "${retail}" ]; then
   retail=110205
 fi
 if [ -z "${mists}" ]; then
-  mists=50501
+  mists="50501,50502"
 fi
 if [ -z "${cata}" ]; then
   cata=40402
