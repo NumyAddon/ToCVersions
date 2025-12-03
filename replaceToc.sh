@@ -4,7 +4,7 @@ if [ -z "${midnight}" ]; then
   midnight=120000
 fi
 if [ -z "${retail}" ]; then
-  retail="110205,110207"
+  retail=110207
 fi
 if [ -z "${mists}" ]; then
   mists=50502
