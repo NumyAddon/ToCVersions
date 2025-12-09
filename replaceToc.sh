@@ -16,7 +16,7 @@ if [ -z "${wrath}" ]; then
   wrath=30403
 fi
 if [ -z "${bcc}" ]; then
-  bcc=20504
+  bcc=20505
 fi
 if [ -z "${classic}" ]; then
   classic=11508
