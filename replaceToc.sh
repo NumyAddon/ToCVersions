@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 if [ -z "${midnight}" ]; then
-  midnight=120000
+  midnight="120000,120001"
 fi
 if [ -z "${retail}" ]; then
   retail=110207
