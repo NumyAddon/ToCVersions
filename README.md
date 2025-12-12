@@ -4,15 +4,15 @@ __replaceToc.sh__ will replace ToC placeholders for retail, classic, tbc, wrath,
 
 Placeholders that will be replaced are:
 
-    @toc-version-midnight@
-    @toc-version-retail@
-    @toc-version-mists@
-    @toc-version-cata@
-    @toc-version-wrath@
-    @toc-version-bcc@
-    @toc-version-classic@
+    @toc-version-midnight@ -> "120000,120001"
+    @toc-version-retail@ -> 110207
+    @toc-version-mists@ -> 50503
+    @toc-version-cata@ -> 40402
+    @toc-version-wrath@ -> 30403
+    @toc-version-bcc@ -> 20505
+    @toc-version-classic@ -> 11508
 
-Note: the retail placeholder will also include midnight, but only around the time midnight reaches PTR. The midnight placeholder will not be removed in the future, to aid backwards compatibility.
+Note: the retail placeholder will also include midnight, but only right before midnight goes live (to more easily define whether an addon is compatible with Midnight). The midnight placeholder will not be removed in the future, to aid backwards compatibility.
 
 The best way to use this, is as part of your addon builds, between checkout and using a packager (e.g. bigwigs packager)
 
