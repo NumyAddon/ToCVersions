@@ -5,7 +5,7 @@ __replaceToc.sh__ will replace ToC placeholders for retail, classic, tbc, wrath,
 Placeholders that will be replaced are:
 
     @toc-version-midnight@ -> "120000,120001"
-    @toc-version-retail@ -> "110207,120000,120001"
+    @toc-version-retail@ -> "120000,120001"
     @toc-version-mists@ -> 50503
     @toc-version-cata@ -> 40402
     @toc-version-wrath@ -> 30403
