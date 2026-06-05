@@ -6,7 +6,7 @@ Placeholders that will be replaced are:
 
     @toc-version-midnight@ -> "120005,120007"
     @toc-version-retail@ -> "120005,120007"
-    @toc-version-mists@ -> "50503,50504"
+    @toc-version-mists@ -> 50504
     @toc-version-cata@ -> 40402
     @toc-version-wrath@ -> 30403
     @toc-version-bcc@ -> 20505
