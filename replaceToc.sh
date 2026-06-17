@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
 if [ -z "${midnight}" ]; then
-  midnight="120005,120007"
+  midnight=120007
 fi
 if [ -z "${retail}" ]; then
-  retail="120005,120007"
+  retail=120007
 fi
 if [ -z "${mists}" ]; then
   mists=50504
