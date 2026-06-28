@@ -9,7 +9,7 @@ Placeholders that will be replaced are:
     @toc-version-mists@ -> 50504
     @toc-version-cata@ -> 40402
     @toc-version-wrath@ -> 30403
-    @toc-version-bcc@ -> 20505
+    @toc-version-bcc@ -> "20505,20506"
     @toc-version-classic@ -> 11508
 
 Note: the retail placeholder will also include midnight, but only right before midnight goes live (to more easily define whether an addon is compatible with Midnight). The midnight placeholder will not be removed in the future, to aid backwards compatibility.
