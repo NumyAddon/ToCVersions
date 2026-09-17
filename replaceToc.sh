@@ -6,6 +6,9 @@ fi
 if [ -z "${retail}" ]; then
   retail=120100
 fi
+if [ -z "${forever}" ]; then
+  forever=16001
+fi
 if [ -z "${mists}" ]; then
   mists=50504
 fi
@@ -25,7 +28,7 @@ fi
 
 if [ $# -eq 0 ]; then
   find . \( ! -regex '.*/\..*' \) -type f -name "*.toc" -exec sed -i \
-    "s/@toc-version-midnight@/$midnight/g; s/@toc-version-retail@/$retail/g; s/@toc-version-mists@/$mists/g; s/@toc-version-cata@/$cata/g; s/@toc-version-wrath@/$wrath/g; s/@toc-version-bc@/$bcc/g; s/@toc-version-bcc@/$bcc/g; s/@toc-version-vanilla@/$classic/g; s/@toc-version-classic@/$classic/g" \
+    "s/@toc-version-midnight@/$midnight/g; s/@toc-version-retail@/$retail/g; s/@toc-version-camelot@/$forever/g; s/@toc-version-forever@/$forever/g; s/@toc-version-mists@/$mists/g; s/@toc-version-cata@/$cata/g; s/@toc-version-wrath@/$wrath/g; s/@toc-version-bc@/$bcc/g; s/@toc-version-bcc@/$bcc/g; s/@toc-version-vanilla@/$classic/g; s/@toc-version-classic@/$classic/g" \
     {} +
 fi
 
@@ -33,6 +36,8 @@ for var in "$@"
 do
   sed -i "s/@toc-version-midnight@/$midnight/g" "$var"
   sed -i "s/@toc-version-retail@/$retail/g" "$var"
+  sed -i "s/@toc-version-camelot@/$forever/g" "$var"
+  sed -i "s/@toc-version-forever@/$forever/g" "$var"
   sed -i "s/@toc-version-mists@/$mists/g" "$var"
   sed -i "s/@toc-version-cata@/$cata/g" "$var"
   sed -i "s/@toc-version-wrath@/$wrath/g" "$var"
