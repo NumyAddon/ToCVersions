@@ -1,18 +1,22 @@
 # replaceToc.sh
 
-__replaceToc.sh__ will replace ToC placeholders for retail, classic, tbc, wrath, cata, and mists.
+__replaceToc.sh__ will replace ToC placeholders for retail, forever/camelot, classic, tbc, wrath, cata, and mists.
 
 Placeholders that will be replaced are:
 
     @toc-version-midnight@ -> 120100
     @toc-version-retail@ -> 120100
+    @toc-version-camelot@ -> 16001
+    @toc-version-forever@ -> 16001
     @toc-version-mists@ -> 50504
     @toc-version-cata@ -> 40402
     @toc-version-wrath@ -> 30403
     @toc-version-bcc@ -> 20506
     @toc-version-classic@ -> 11509
 
-Note: the retail placeholder will also include midnight, but only right before midnight goes live (to more easily define whether an addon is compatible with Midnight). The midnight placeholder will not be removed in the future, to aid backwards compatibility.
+Note: The midnight placeholder may be removed once the next retail expansion goes live, until then, retail and midnight are equivalent.
+
+Note: Camelot and Forever are currently interchangible, and both will be supported going forward. If the final name becomes something different, then all 3 variations will be supported.
 
 The best way to use this, is as part of your addon builds, between checkout and using a packager (e.g. bigwigs packager)
 
@@ -44,6 +48,7 @@ Full example:
         uses: NumyAddon/ToCVersions@v1
         env:
           retail: 1234
+          forever: 1234
           mists: 1234
           cata: 1234
           wrath: 1234
@@ -56,6 +61,7 @@ An example .toc file could be:
 
     ## Interface: @toc-version-retail@
     ## Interface-Retail: @toc-version-retail@
+    ## Interface-Camelot: @toc-version-camelot@
     ## Interface-Mists: @toc-version-mists@
     ## Interface-Cata: @toc-version-cata@
     ## Interface-Wrath: @toc-version-wrath@
