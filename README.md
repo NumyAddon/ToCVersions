@@ -4,8 +4,8 @@ __replaceToc.sh__ will replace ToC placeholders for retail, forever/camelot, cla
 
 Placeholders that will be replaced are:
 
-    @toc-version-midnight@ -> 120105
-    @toc-version-retail@ -> 120105
+    @toc-version-midnight@ -> "120105,120107"
+    @toc-version-retail@ -> "120105,120107"
     @toc-version-camelot@ -> 16001
     @toc-version-forever@ -> 16001
     @toc-version-mists@ -> 50504
